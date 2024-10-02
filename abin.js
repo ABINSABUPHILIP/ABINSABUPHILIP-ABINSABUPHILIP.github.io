@@ -1,5 +1,17 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-    // You can add code here to handle form submission, like sending an AJAX request or showing a success message
-    alert('Message sent successfully!');
+// abin.js
+
+// Preloader
+window.addEventListener("load", () => {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('hidden');
+});
+
+// Smooth Scrolling (Optional if not using CSS scroll-behavior)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
