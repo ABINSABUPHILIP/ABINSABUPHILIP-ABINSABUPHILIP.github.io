@@ -3,60 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>My Personal Website</title>
+    <title>Abin Sabu Philip Portfolio</title>
+    <link rel="stylesheet" href="abin.css">
 </head>
 <body>
+    <div class="preloader">
+        <!-- Preloader animation -->
+    </div>
+    
     <header>
-        <div class="container">
-            <h1>My Name</h1>
+        <div class="navbar">
+            <h1>Abin Sabu Philip</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>This is where you can introduce yourself.</p>
-        </div>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>As a computer science student, I have a strong foundation in programming and web development, and a passion for AI and cybersecurity.</p>
     </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-            </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li>Intel Unnati Training: Developed LLM inference (2024)</li>
+            <li>ICT Academy of Kerala: Web Development (2022)</li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Language Learning Platform (Vue.js, Python)</li>
+            <li>Custom GPT Chatbot (OpenVINO, Python)</li>
+        </ul>
     </section>
 
-    <script src="script.js"></script>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:abinsabuphilip@gmail.com">abinsabuphilip@gmail.com</a></p>
+        <p>Phone: +91-8281615575</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abin Sabu Philip</p>
+    </footer>
+
+    <script src="abin.js"></script>
 </body>
 </html>
